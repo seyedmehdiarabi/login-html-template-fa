@@ -1,0 +1,83 @@
+
+/*------------------------------------------------------------------
+[Main Stylesheet]
+
+Project:    Just Log
+Version:    1.1.0
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+    1. Global style
+    2. Loader / .loader
+    3. Login page / .login_wrapper 
+    4. Media Queries / @media
+
+-------------------------------------------------------------------*/
+/** GLOBAL CLASSES **/
+
+/*@import url('https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&display=swap');*/
+
+body {
+    direction: rtl;
+    text-align: right;
+    font-family: Yekan;
+    color: #535353;
+}
+
+img{
+    max-width: 100%;
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: Vazir;
+}
+
+/*---------- Global Style closed ----------------*/
+
+
+/*---------- Loader Style ----------------*/
+
+.loader {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    text-align: center;
+    background: rgba(255,255,255,0.97);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loader_div {
+    border: 6px solid #ffebea;
+    border-radius: 50%;
+    border-top: 6px solid #ff574d;
+    width: 60px;
+    height: 60px;
+    -webkit-animation: spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite;
+}
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/*---------- Loader Style closed ----------------*/
+
+
+/*---------- Login Page Style ----------------*/
+
+
